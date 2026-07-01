@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Glutathione Glow Cleansing Balm — MANYO</title>
+
+<!-- ============================================================
+     [1] META PIXEL — 픽셀 자리 (YOUR_PIXEL_ID만 넣으면 작동)
+     ============================================================ -->
+<script>
+  var META_PIXEL_ID = "YOUR_PIXEL_ID";   // ← 여기에 픽셀 ID (15~16자리 숫자)
+
+  if (META_PIXEL_ID && META_PIXEL_ID !== "YOUR_PIXEL_ID") {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', META_PIXEL_ID);
+    fbq('track', 'PageView');
+  } else {
+    window.fbq = function(){ console.log('[pixel placeholder]', arguments); };
+  }
+</script>
+<!-- ============================================================ -->
+
+<style>
+  :root{
+    --ink:#2b2417; --paper:#ffffff; --soft:#fff6d6;
+    --yellow:#ffcf17; --yellow-deep:#f2a900; --yellow-soft:#ffeea0;
+    --amber:#d68a00; --line:#f6e28f; --muted:#8a7f66;
+    --pop:#ff8a3d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Helvetica Neue",Arial,system-ui,sans-serif;color:var(--ink);
+    background:linear-gradient(180deg,#fffdf4 0%,#ffffff 340px);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  .topbar{background:linear-gradient(90deg,#ffcf17,#ff8a3d);color:#3d2a00;text-align:center;font-size:12px;
+    letter-spacing:.06em;padding:10px;text-transform:uppercase;font-weight:700;}
+  .topbar b{color:#7a2e00}
+
+  /* ===== 상단 2단 ===== */
+  .product{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;
+    padding:40px 0 20px;align-items:start;}
+
+  /* 좌측 갤러리 */
+  .gallery .stage{border:1px solid var(--line);border-radius:14px;background:var(--soft);
+    aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;
+    color:#bfae7f;font-size:14px;text-align:center;overflow:hidden;position:relative;}
+  .gallery .stage img{width:100%;height:100%;object-fit:cover}
+  .gallery .stage video{width:100%;height:100%;object-fit:cover;background:#000}
+  .gallery .stage iframe{width:100%;height:100%;border:none}
+  .stage .ph-label{padding:24px;color:#bfae7f}
+
+  .carousel{display:flex;gap:10px;margin-top:12px;overflow-x:auto;padding-bottom:4px;}
+  .carousel::-webkit-scrollbar{height:6px}
+  .carousel::-webkit-scrollbar-thumb{background:var(--yellow);border-radius:3px}
+  .carousel .thumb{flex:0 0 80px;width:80px;height:80px;border:2px solid var(--line);
+    border-radius:9px;background:var(--soft);cursor:pointer;overflow:hidden;position:relative;
+    display:flex;align-items:center;justify-content:center;color:#bfae7f;font-size:10px;text-align:center;}
+  .carousel .thumb.active{border-color:var(--yellow-deep)}
+  .carousel .thumb img{width:100%;height:100%;object-fit:cover}
+  .carousel .thumb.video::after{content:"▶";position:absolute;inset:0;display:flex;
+    align-items:center;justify-content:center;background:rgba(0,0,0,.35);color:#fff;font-size:16px;}
+
+  /* 우측 정보 (이퀄베리 스타일) */
+  .info h1{font-size:24px;line-height:1.3;font-weight:800;margin-bottom:18px}
+
+  .cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;
+    background:var(--pop);color:#fff;font-size:17px;font-weight:800;padding:16px 22px;
+    border:none;border-radius:12px;cursor:pointer;text-decoration:none;
+    box-shadow:0 4px 0 #d96a1f;transition:transform .05s,box-shadow .05s,background .15s;}
+  .cta:hover{background:#ff9c56}
+  .cta:active{transform:translateY(3px);box-shadow:0 1px 0 #d96a1f}
+  .cta:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+
+  /* 긴급성 배지 */
+  .urgency{margin:16px auto 0;text-align:center;font-size:13px;font-weight:700;color:#7a5b00;
+    border:1px solid var(--yellow);border-radius:999px;padding:7px 14px;width:fit-content;background:#fffdf5}
+
+  /* 하이라이트 한 줄 */
+  .headline{text-align:center;font-size:19px;font-weight:800;margin:16px 0;padding:6px 4px;
+    background:linear-gradient(180deg,transparent 55%,var(--yellow-soft) 55%);display:block}
+
+  /* 프로모션 */
+  .promo{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin:4px 0 20px;display:grid;gap:10px}
+  .promo-row{display:flex;justify-content:space-between;align-items:center;font-size:15px}
+  .promo-row .promo-name{font-weight:600;color:var(--ink)}
+  .promo-row .promo-price .old{color:#b8ad8f;text-decoration:line-through;margin-right:7px;font-weight:400;font-size:14px}
+  .promo-row .promo-price b{font-size:18px;color:var(--ink)}
+  .promo-row.best{background:var(--yellow-soft);margin:0 -10px;padding:10px;border-radius:10px}
+  .promo-row.best .promo-price b{color:#a15a00}
+  .flag{display:inline-block;background:var(--pop);color:#fff;font-size:10px;font-weight:800;
+    padding:2px 7px;border-radius:5px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+
+  /* 통계 4칸 (남색 박스) */
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;background:#1e1b4b;border-radius:14px;padding:14px}
+  .stat{border:1px solid #3a3570;border-radius:10px;padding:12px 8px;text-align:center}
+  .stat .ic{font-size:15px;margin-bottom:3px}
+  .stat .lbl{font-size:11px;color:#c9c6ee;font-weight:600}
+  .stat .num{font-size:20px;font-weight:800;color:var(--yellow);margin-top:2px}
+  .stats-note{font-size:10px;color:var(--muted);text-align:center;margin-top:8px;line-height:1.4}
+
+  /* 하단 상세 세로 배치 */
+  .detail{padding:20px 0 10px}
+  .detail .trust{text-align:center;font-size:22px;font-weight:800;margin:26px 0 6px}
+  .detail .trust span{color:var(--yellow-deep)}
+  .detail .trust-sub{text-align:center;color:var(--muted);font-size:14px;margin-bottom:16px}
+  .detail-img{margin:0;border-radius:12px;overflow:hidden}
+  .detail-img img{width:100%;border-radius:12px;display:block}
+  .detail-img.ph{background:var(--soft);border:1px dashed #d8c98f;
+    min-height:220px;display:flex;align-items:center;justify-content:center;
+    color:#bfae7f;font-size:13px;text-align:center;padding:20px;}
+
+  footer{padding:30px 0 110px;text-align:center;color:var(--muted);font-size:12px}
+
+  /* 모바일 하단 고정 CTA */
+  .sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);
+    padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;
+    box-shadow:0 -4px 14px rgba(0,0,0,.06);z-index:50;}
+  .sticky .pp{font-size:16px;font-weight:800;white-space:nowrap}
+  .sticky .pp .old{font-size:13px;color:#b8ad8f;text-decoration:line-through;font-weight:400;margin-right:4px}
+  .sticky .cta{margin:0;padding:13px 18px;font-size:15px;flex:1;width:auto;box-shadow:0 3px 0 #d96a1f}
+  .sticky .cta:active{box-shadow:0 1px 0 #d96a1f}
+
+  @media (max-width:860px){.product{grid-template-columns:1fr;gap:24px}}
+  @media (max-width:520px){.info h1{font-size:22px}.price{font-size:23px}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}}
+</style>
+</head>
+<body>
+
+  <div class="topbar">🎉 Limited-time launch offer · <b>Save on every order</b> · Ships from Amazon</div>
+
+  <div class="wrap">
+
+    <!-- ===== 상단 2단 ===== -->
+    <div class="product">
+
+      <!-- 좌측: 메인 스테이지 + 캐러셀 -->
+      <div class="gallery">
+        <div class="stage" id="stage">
+          <div class="ph-label">[ 메인 이미지/영상 자리 — 아래 캐러셀 썸네일을 누르면 여기 표시됩니다 ]</div>
+        </div>
+
+        <!-- ▼▼ 캐러셀: 이미지와 영상 혼합 ▼▼
+             · 이미지:        data-type="image"   data-src="이미지URL"
+             · MP4 영상:      data-type="video"   data-src="영상URL.mp4"
+             · 유튜브:        data-type="youtube" data-src="유튜브영상ID"
+             · 구글드라이브:  data-type="drive"   data-src="파일ID"  (view→preview 자동) -->
+        <div class="carousel" id="carousel">
+          <div class="thumb active" data-type="image" data-src="">이미지 1</div>
+          <div class="thumb" data-type="image" data-src="">이미지 2</div>
+          <div class="thumb" data-type="image" data-src="">이미지 3</div>
+          <div class="thumb video" data-type="video" data-src="">영상</div>
+          <div class="thumb" data-type="image" data-src="">이미지 4</div>
+        </div>
+      </div>
+
+      <!-- 우측: 제품 정보 (이퀄베리 스타일, 간결) -->
+      <div class="info">
+        <h1>[KOREA &amp; JAPAN NO.1]<br/>Glutathione Dark Spot Serum</h1>
+
+        <!-- 아마존 버튼 -->
+        <a href="#" class="cta amazon-cta"
+           data-amazon="https://www.amazon.com/Glutathione-Niacinamide-Remover-Radiance-Skincare/dp/B0GGH9DCKK?ref_=ast_sto_dp">
+          Claim Your Savings on Amazon →
+        </a>
+
+        <!-- 긴급성 배지 -->
+        <div class="urgency">🛍️ Over 3K+ orders placed last month</div>
+
+        <!-- 하이라이트 한 줄 -->
+        <div class="headline">🍋 NO MORE DARK SPOTS IN 7 DAYS 🍋</div>
+
+        <!-- 프로모션 -->
+        <div class="promo">
+          <div class="promo-row">
+            <span class="promo-name">Single</span>
+            <span class="promo-price"><span class="old">$21</span><b>$19.90</b></span>
+          </div>
+          <div class="promo-row best">
+            <span class="promo-name">＋ Glutathione 7 Dark Spot Serum Patch <span class="flag">BEST DEAL · SAVE 21%</span></span>
+            <span class="promo-price"><span class="old">$43</span><b>$34</b></span>
+          </div>
+        </div>
+
+        <!-- 통계 4칸 -->
+        <div class="stats">
+          <div class="stat"><div class="ic">📈</div><div class="lbl">Monthly Sales</div><div class="num">70K+</div></div>
+          <div class="stat"><div class="ic">🔥</div><div class="lbl">TikTok Views</div><div class="num">1.8M+</div></div>
+          <div class="stat"><div class="ic">✨</div><div class="lbl">Amazon Reviews</div><div class="num">14K+</div></div>
+          <div class="stat"><div class="ic">🏅</div><div class="lbl">Best-Selling</div><div class="num">#1</div></div>
+        </div>
+        <div class="stats-note">* Based on monthly sales, social exposure, Amazon reviews, and category rankings.</div>
+      </div>
+    </div>
+
+    <!-- ===== 하단: 상세페이지 이미지 세로 배치 ===== -->
+    <div class="detail">
+      <div class="detail-img" style="margin-bottom:14px"><img src="images/detail-banner.jpg" alt="KOREA & JAPAN No.1 Best-selling Dark Spot Serum" /></div>
+      <div class="detail-img"><img src="images/detail-full.jpg" alt="Manyo Glutathione 7 Dark Spot Serum — 7-day results, ingredients, and how to use" /></div>
+      <!-- 상세 이미지가 여러 장이면 이 아래에 <div class="detail-img"><img src="images/파일명.jpg"></div> 를 계속 추가하면 됩니다 -->
+    </div>
+
+    <div style="text-align:center;padding:10px 0 40px">
+      <a href="#" class="cta amazon-cta" style="max-width:420px;margin:0 auto"
+         data-amazon="https://www.amazon.com/Glutathione-Niacinamide-Remover-Radiance-Skincare/dp/B0GGH9DCKK?ref_=ast_sto_dp">
+        Claim Your Glow on Amazon →
+      </a>
+    </div>
+
+    <footer>© 2026 MANYO. This page directs you to Amazon to complete your purchase.</footer>
+  </div>
+
+  <!-- 모바일 하단 고정 CTA -->
+  <div class="sticky">
+    <span class="pp"><span class="old">$21</span>$19.90</span>
+    <a href="#" class="cta amazon-cta"
+       data-amazon="https://www.amazon.com/Glutathione-Niacinamide-Remover-Radiance-Skincare/dp/B0GGH9DCKK?ref_=ast_sto_dp">
+      Buy on Amazon →
+    </a>
+  </div>
+
+<!-- ============================================================
+     [2] 캐러셀 로직 + 전환 이벤트
+     ============================================================ -->
+<script>
+  var stage = document.getElementById('stage');
+  function renderStage(type, src){
+    if(!src){ stage.innerHTML = '<div class="ph-label">[ 메인 자리 — 썸네일에 data-src를 넣으면 여기 표시됩니다 ]</div>'; return; }
+    if(type === 'image'){ stage.innerHTML = '<img src="'+src+'" alt="product">'; }
+    else if(type === 'video'){ stage.innerHTML = '<video src="'+src+'" controls playsinline></video>'; }
+    else if(type === 'youtube'){ stage.innerHTML = '<iframe src="https://www.youtube.com/embed/'+src+'" allowfullscreen></iframe>'; }
+    else if(type === 'drive'){ stage.innerHTML = '<iframe src="https://drive.google.com/file/d/'+src+'/preview" allow="autoplay" allowfullscreen></iframe>'; }
+  }
+  document.querySelectorAll('#carousel .thumb').forEach(function(thumb){
+    thumb.addEventListener('click', function(){
+      document.querySelectorAll('#carousel .thumb').forEach(function(t){t.classList.remove('active')});
+      thumb.classList.add('active');
+      renderStage(thumb.getAttribute('data-type'), thumb.getAttribute('data-src'));
+    });
+  });
+  var first = document.querySelector('#carousel .thumb');
+  if(first) renderStage(first.getAttribute('data-type'), first.getAttribute('data-src'));
+
+  function handleAmazonClick(e){
+    e.preventDefault();
+    var url = this.getAttribute('data-amazon');
+    try {
+      fbq('track', 'Lead', {
+        content_name: 'Glutathione Glow Cleansing Balm',
+        content_ids: ['B0GGH9DCKK'], value: 19.90, currency: 'USD'
+      });
+    } catch(err){}
+    setTimeout(function(){ window.location.href = url; }, 250);
+  }
+  document.querySelectorAll('.amazon-cta').forEach(function(el){ el.addEventListener('click', handleAmazonClick); });
+</script>
+<!-- ============================================================ -->
+
+</body>
+</html>
